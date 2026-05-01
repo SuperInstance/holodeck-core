@@ -66,7 +66,7 @@ impl CombatEngine {
         Self::default()
     }
 
-    pub fn tick(&mut self, room_id: &str, _gauges: &HashMap<String, Gauge>) -> TickResult {
+    pub fn tick(&mut self, _room_id: &str, _gauges: &HashMap<String, Gauge>) -> TickResult {
         self.tick_count += 1;
         TickResult {
             alerts: Vec::new(),
